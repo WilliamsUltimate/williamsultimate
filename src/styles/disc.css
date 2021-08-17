@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+div .disc {
+  width: 210px;
+  height: 210px;
+}
+
+
+.x {
+  animation: x 29s linear infinite alternate;
+  position: absolute;
+}
+
+.y {
+  animation: y 32s linear infinite alternate;
+  position: absolute;
+}
+
+.lawufa-x {
+  animation: lawufa-x 53s linear infinite alternate;
+  position: absolute;
+}
+
+.lawufa-y {
+  animation: lawufa-y 28s linear infinite alternate;
+  position: absolute;
+}
+
+.buf-x {
+  animation: buf-x 169s linear infinite alternate;
+  position: absolute;
+}
+
+.buf-y {
+  animation: buf-y 13s linear infinite alternate;
+  position: absolute;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - 210px) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - 210px) );
+  }
+}
+
+@keyframes lawufa-x {
+  100% {
+    transform: translateX( calc(100vw - 210px) );
+  }
+}
+
+@keyframes lawufa-y {
+  100% {
+    transform: translateY( calc(100vh - 210px) );
+  }
+}
+
+@keyframes buf-x {
+  100% {
+    transform: translateX( calc(100vw - 210px) );
+  }
+}
+
+@keyframes buf-y {
+  100% {
+    transform: translateY( calc(100vh - 210px) );
+  }
+}
