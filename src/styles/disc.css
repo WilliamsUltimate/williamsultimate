@@ -2,40 +2,39 @@ body {
   margin: 0;
 }
 
-div .disc {
+div .outer-disc {
   width: 210px;
   height: 210px;
+  position: absolute;
+}
+
+div .inner-disc {
+  animation: rotation 10s linear infinite;
 }
 
 
-.x {
+.wufo-x {
   animation: x 29s linear infinite alternate;
-  position: absolute;
 }
 
-.y {
+.wufo-y {
   animation: y 32s linear infinite alternate;
-  position: absolute;
 }
 
 .lawufa-x {
-  animation: lawufa-x 53s linear infinite alternate;
-  position: absolute;
+  animation: x 53s linear infinite alternate;
 }
 
 .lawufa-y {
-  animation: lawufa-y 28s linear infinite alternate;
-  position: absolute;
+  animation: y 28s linear infinite alternate;
 }
 
 .buf-x {
-  animation: buf-x 169s linear infinite alternate;
-  position: absolute;
+  animation: x 169s linear infinite alternate;
 }
 
 .buf-y {
-  animation: buf-y 13s linear infinite alternate;
-  position: absolute;
+  animation: y 13s linear infinite alternate;
 }
 
 @keyframes x {
@@ -45,40 +44,13 @@ div .disc {
 }
 
 @keyframes y {
-  100% {
-    transform: translateY( calc(100vh - 210px) );
-  }
-}
-
-@keyframes lawufa-x {
-  100% {
-    transform: translateX( calc(100vw - 210px) );
-  }
-}
-
-@keyframes lawufa-y {
-  100% {
-    transform: translateY( calc(100vh - 210px) );
-  }
-}
-
-@keyframes buf-x {
-  100% {
-    transform: translateX( calc(100vw - 210px) );
-  }
-}
-
-@keyframes buf-y {
-  100% {
+  to {
     transform: translateY( calc(100vh - 210px) );
   }
 }
 
 @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
   to {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
   }
 }

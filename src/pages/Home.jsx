@@ -21,7 +21,7 @@ export default function Home() {
         to='/'
         className="bg-white p-2 shadow-drop text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
       >
-        Williams College Ultimate
+        Williams Ultimate
       </Link>
       <div
         className="flex flex-row justify-between"
@@ -62,21 +62,9 @@ export default function Home() {
             {isShown ? 'Or click here for a random disc!' : 'Catch a disc!'}
         </Link>
       </div>
-      <div class="x disc">
-        <div class="y disc">
-          <TeamDisc team="wufo" />
-        </div>
-      </div>
-      <div class="lawufa-x disc">
-        <div class="lawufa-y disc">
-          <TeamDisc team="lawufa" />
-        </div>
-      </div>
-      <div class="buf-x disc">
-        <div class="buf-y disc">
-          <TeamDisc team="buf" />
-        </div>
-      </div>
+      <TeamDisc team="wufo" />
+      <TeamDisc team="lawufa" />
+      <TeamDisc team="buf" />
     </div>
   )
 }
