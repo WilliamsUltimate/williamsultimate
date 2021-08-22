@@ -73,3 +73,12 @@ div .disc {
     transform: translateY( calc(100vh - 210px) );
   }
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
