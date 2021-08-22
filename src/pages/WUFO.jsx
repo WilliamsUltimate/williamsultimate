@@ -1,16 +1,103 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function WUFO() {
-  const titleRef = useRef()
-
-  const handleBackClick = useEffect(() => {
-    titleRef.current.scrollIntoView({ behavior: 'smooth' })
-  }, [])
-
   return (
     <div>
-      <button onClick={handleBackClick} />
+      <Navbar team="wufo"/>
+      <br id="top"/>
+      <br/>
+      <br/>
+      <h1>This is the top</h1>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div className="flex flex-row justify-between p-4 w-full text-gray-500 z-10">
+      <Link 
+        to='/wufo#top'
+        className="bg-white p-2 shadow-drop text-gray-shadow"
+      >
+        Go back to top
+      </Link>
+      </div>
     </div>
   )
 }

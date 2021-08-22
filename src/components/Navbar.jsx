@@ -1,37 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
-export default function Navbar(ref) {
+export default function Navbar(props) {
   return (
     <div className="flex flex-row justify-between p-4 fixed w-full text-gray-500 z-10">
       <Link 
         to='/'
         className="bg-white p-2 shadow-drop text-gray-shadow"
       >
-        Williams College Ultimate
+        Williams Ultimate
       </Link>
       <div
         className="flex flex-row justify-between"
         style={{width: '15%'}}
-        ref={ref}
       >
         <Link 
-          to="/wufo"
+          to={{
+            pathname: `/${props.team}`
+          }}
           className="bg-white p-2 shadow-drop text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
         >
-          WUFO
+          {props.team.toUpperCase()}
         </Link>
         <Link 
           to='/lawufa'
           className="bg-white p-2 shadow-drop text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
         >
-          La WUFA
+          About
         </Link>
         <Link 
           to='/buf'
           className="bg-white p-2 shadow-drop text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
         >
-          BUF
+          Roster
         </Link>
       </div>
     </div>

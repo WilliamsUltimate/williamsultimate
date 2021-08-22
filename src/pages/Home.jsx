@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/disc.css';
 import '../styles/home.css';
 import TeamDisc from '../components/TeamDisc';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Home() {
   const [isShown, setIsShown] = useState(false);
@@ -59,7 +59,7 @@ export default function Home() {
           onMouseLeave={() => setIsShown(false)}
           className="bg-white p-2 shadow-drop text-2xl text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
         >
-            {isShown ? 'Click here to catch a random disc!' : 'Catch a disc!'}
+            {isShown ? 'Or click here for a random disc!' : 'Catch a disc!'}
         </Link>
       </div>
       <div class="x disc">

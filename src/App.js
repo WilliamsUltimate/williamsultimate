@@ -3,7 +3,6 @@ import WUFO from './pages/WUFO';
 import LaWUFA from './pages/LaWUFA';
 import BUF from './pages/BUF';
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
