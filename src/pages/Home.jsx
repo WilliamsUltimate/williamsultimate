@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/disc.css';
 import '../styles/home.css';
 import TeamDisc from '../components/TeamDisc';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [isShown, setIsShown] = useState(false);

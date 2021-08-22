@@ -2,7 +2,7 @@ import React from 'react';
 import wufologo from '../assets/wufopics/wufo.png';
 import lawufalogo from '../assets/lawufapics/lawufa.png';
 import buflogo from '../assets/bufpics/buf.png';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 export default function TeamDisc(props) {
   return (
