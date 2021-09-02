@@ -14,7 +14,7 @@ export default function TeamDropdown(props) {
   }
   
   return (
-    <div className="bg-white p-2 text-gray-shadow w-28 shadow-drop">
+    <div className="bg-white rounded p-2 text-purple-900 w-28">
       <ul>
         <li>
           <Link
