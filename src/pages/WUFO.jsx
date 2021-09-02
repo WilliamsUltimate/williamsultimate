@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import { HashLink as Link } from 'react-router-hash-link';
 import Roster from '../components/Roster';
