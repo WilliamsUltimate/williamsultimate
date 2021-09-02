@@ -1,12 +1,17 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import TeamLanding from '../components/TeamLanding';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default function WUFO() {
   return (
-    <div>
-      <Navbar team="wufo"/>
-      <br id="top"/>
+    <div className="flex flex-col">
+      <div className="top-0" id="top">
+        <Navbar team="wufo"/>
+      </div>
+      <div>
+        <TeamLanding />
+      </div>
       <br/>
       <br/>
       <h1>This is the top</h1>

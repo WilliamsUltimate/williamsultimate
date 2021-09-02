@@ -7,7 +7,10 @@ module.exports = {
         gray: {
           shadow: '#393939'
         }
-      }
+      },
+      backgroundImage: theme => ({
+        'wufo': "url('assets/wufopics/danny-kaizen.JPG')"
+      })
     },
     boxShadow: {
       drop: '8px 8px 0px 0px #393939'
