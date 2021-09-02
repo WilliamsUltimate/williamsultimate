@@ -9,7 +9,7 @@ module.exports = {
         }
       },
       backgroundImage: theme => ({
-        'wufo': "url('assets/wufopics/danny-kaizen.JPG')"
+        'wufo': "url('assets/wufopics/kaizen-nick.jpg')"
       })
     },
     boxShadow: {
