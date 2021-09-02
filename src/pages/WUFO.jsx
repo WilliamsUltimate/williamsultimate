@@ -11,7 +11,7 @@ export default function WUFO() {
         <Navbar team="wufo"/>
       </div>
       <div>
-        <TeamLanding />
+        <TeamLanding team="wufo"/>
       </div>
       <div id="roster">
         <Roster team="wufo"/>
