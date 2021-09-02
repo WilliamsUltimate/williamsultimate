@@ -8,7 +8,7 @@ export default function Roster(props) {
                        "donk", "elijah", "gordon",
                        "harry", "jape", "jonah",
                        "kerosene", "lasuna", "lucas",
-                       "malcolm", "minhuy", "reece",
+                       "malcolm", "minh-huy", "reece",
                        "scar"]
 
   // TODO: Add missing sophomores
