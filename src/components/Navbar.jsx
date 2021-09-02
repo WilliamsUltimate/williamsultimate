@@ -18,15 +18,14 @@ export default function Navbar(props) {
           className="flex flex-row justify-between"
           style={{width: '15%'}}
         >
-          {/* Need to add hash links here... or create new pages? */}
           <Link 
-            to='/lawufa'
+            smooth to={`/${props.team}#about`}
             className="bg-white p-2 shadow-drop text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
           >
             About
           </Link>
           <Link 
-            to='/buf'
+            smooth to={`/${props.team}#roster`}
             className="bg-white p-2 shadow-drop text-gray-shadow transition hover:bg-purple-100 duration-125 ease-in-out"
           >
             Roster
