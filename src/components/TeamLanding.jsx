@@ -5,7 +5,7 @@ export default function TeamLanding() {
   return (
     <div className="min-h-screen">
       <div 
-        className="absolute bg-wufo bg-cover bg-origin-border h-full w-full" 
+        className="absolute bg-wufo bg-cover bg-origin-border bg-fixed h-full w-full" 
         style={{ opacity: '0.8', filter: 'brightness(75%) saturate(120%)' }}>
       </div>
       <div className="absolute text-white text-center h-full w-full top-24">
