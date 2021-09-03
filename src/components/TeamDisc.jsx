@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 import wufologo from '../assets/wufopics/wufo.png';
 import lawufalogo from '../assets/lawufapics/lawufa.png';
 import buflogo from '../assets/bufpics/buf.png';
