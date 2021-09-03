@@ -2,50 +2,79 @@ body {
   margin: 0;
 }
 
-div .outer-disc {
+div .wufo-outer-disc {
   width: 210px;
   height: 210px;
   position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div .lawufa-outer-disc {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div .buf-outer-disc {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wufo-x {
+  animation: left-to-right-x 29s linear infinite alternate;
+}
+
+.wufo-y {
+  animation: up-to-down-y 32s linear infinite alternate;
+}
+
+.lawufa-x {
+  animation: right-to-left-x 28s linear infinite alternate;
+}
+
+.lawufa-y {
+  animation: up-to-down-y 33s linear infinite alternate;
+}
+
+.buf-x {
+  animation: left-to-right-x 30s linear infinite alternate;
+}
+
+.buf-y {
+  animation: down-to-up-y 31s linear infinite alternate;
 }
 
 div .inner-disc {
   animation: rotation 10s linear infinite;
 }
 
-
-.wufo-x {
-  animation: x 29s linear infinite alternate;
-}
-
-.wufo-y {
-  animation: y 32s linear infinite alternate;
-}
-
-.lawufa-x {
-  animation: x 53s linear infinite alternate;
-}
-
-.lawufa-y {
-  animation: y 28s linear infinite alternate;
-}
-
-.buf-x {
-  animation: x 169s linear infinite alternate;
-}
-
-.buf-y {
-  animation: y 13s linear infinite alternate;
-}
-
-@keyframes x {
+@keyframes left-to-right-x {
   100% {
     transform: translateX( calc(100vw - 210px) );
   }
 }
 
-@keyframes y {
+@keyframes right-to-left-x {
+  100% {
+    transform: translateX( calc(-100vw + 210px) );
+  }
+}
+
+@keyframes up-to-down-y {
   to {
     transform: translateY( calc(100vh - 210px) );
+  }
+}
+
+@keyframes down-to-up-y {
+  to {
+    transform: translateY( calc(-100vh + 210px) );
   }
 }
 

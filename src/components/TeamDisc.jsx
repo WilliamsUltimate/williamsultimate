@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import wufologo from '../assets/wufopics/wufo.png';
 import lawufalogo from '../assets/lawufapics/lawufa.png';
 import buflogo from '../assets/bufpics/buf.png';
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function TeamDisc(props) {
   return (
-    <div class="outer-disc">
+    <div class={`${props.team}-outer-disc`}>
       <div class={`${props.team}-x`}>
         <div class={`${props.team}-y`}>
           <div class="inner-disc">
