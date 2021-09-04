@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function TeamDisc(props) {
   return (
-    <div class="outer-disc">
+    <div class={`${props.team}-outer-disc`}>
       <div class={`${props.team}-x`}>
         <div class={`${props.team}-y`}>
           <div class="inner-disc">
