@@ -19,14 +19,14 @@ export default function Player(props) {
         <div className="cursor-pointer relative">
             {props.team === "wufo" ? 
               <img 
-                src={require(`../assets/wufopics/roster/${props.name}.jpg`).default}
-                alt={`${props.name}`}
+                src={require(`../assets/wufopics/roster/${props.last.toLowerCase()}.jpg`).default}
+                alt={`${props.first} ${props.last}`}
                 className="rounded"
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
               /> :
               <img 
                 src={require(`../assets/lawufapics/roster/${props.name}.jpg`).default}
-                alt={`${props.name}`}
+                alt={`${props.first} ${props.last}`}
                 className="rounded"
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
               />
@@ -35,7 +35,7 @@ export default function Player(props) {
               className="bg-black bg-opacity-50 rounded absolute right-2 bottom-2 text-white py-1 px-3 text-2xl font-semibold"
               style={{ textShadow: '3px 2px #4C1D95' }}
             >
-              #77 Alan
+              #{props.number} {props.first}
             </div>
         </div>
 
@@ -43,8 +43,8 @@ export default function Player(props) {
         <div className="cursor-pointer relative">
           {props.team === "wufo" ? 
             <img 
-              src={require(`../assets/wufopics/roster/${props.name}.jpg`).default}
-              alt={`${props.name}`}
+              src={require(`../assets/wufopics/roster/${props.last.toLowerCase()}.jpg`).default}
+              alt={`${props.first} ${props.last}`}
               className="rounded"
               style={{ 
                 objectFit: "cover", 
@@ -57,7 +57,7 @@ export default function Player(props) {
             /> :
             <img 
               src={require(`../assets/lawufapics/roster/${props.name}.jpg`).default}
-              alt={`${props.name}`}
+              alt={`${props.first} ${props.last}`}
               className="rounded"
               style={{ 
                 objectFit: "cover", 
@@ -73,7 +73,7 @@ export default function Player(props) {
             className="absolute top-4 left-2 text-white py-1 px-3 text-2xl font-semibold"
             style={{ textShadow: '3px 2px #4C1D95' }}
           >
-            Alan Sun
+            {props.first} {props.last}
           </div>
           <div className="flex flex-row">
             <div 
@@ -87,10 +87,10 @@ export default function Player(props) {
             <div 
               className="flex flex-col absolute top-16 left-32 text-white py-1 px-3 text-md font-medium"
             >
-              <div className="py-2">Lasuna</div> 
-              <div className="py-2">Junior</div>
-              <div className="py-2">Cutter</div>
-              <div className="py-2">Hamilton, NJ</div>
+              <div className="py-2">{props.nickname}</div> 
+              <div className="py-2">{props.year}</div>
+              <div className="py-2">{props.position}</div>
+              <div className="py-2">{props.hometown}</div>
             </div>
           </div>
         </div>
