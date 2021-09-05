@@ -14,11 +14,11 @@ export default function TeamDropdown(props) {
   }
   
   return (
-    <div className="bg-white p-2 text-gray-shadow w-28 shadow-drop">
+    <div className="bg-black bg-opacity-40 rounded p-2 text-white w-28">
       <ul>
         <li>
           <Link
-            className="p-2 transition hover:text-purple-500 duration-125 ease-in-out"
+            className="p-2 transition hover:text-purple-200 duration-125 ease-in-out"
             to={`/${otherTeams[0]}`}
           >
             {displayName(otherTeams[0])}
@@ -26,7 +26,7 @@ export default function TeamDropdown(props) {
         </li>
         <li>
           <Link
-            className="p-2 transition hover:text-purple-500 duration-125 ease-in-out"
+            className="p-2 transition hover:text-purple-200 duration-125 ease-in-out"
             to={`/${otherTeams[1]}`}
           >
             {displayName(otherTeams[1])}

@@ -13,7 +13,10 @@ export default function WUFO() {
         <Navbar team="wufo"/>
       </div>
       <div>
-        <TeamLanding />
+        <TeamLanding team="wufo"/>
+      </div>
+      <div id="roster">
+        <Roster team="wufo"/>
       </div>
 
       {/* Upcoming Events and Twitter */}
@@ -33,10 +36,6 @@ export default function WUFO() {
         >
           Go back to top
         </Link>
-      </div>
-      <div id="roster">
-        <br/>
-        <Roster team="wufo"/>
       </div>
     </div>
   )
