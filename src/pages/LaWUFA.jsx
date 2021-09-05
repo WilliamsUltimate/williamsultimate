@@ -11,7 +11,7 @@ export default function LaWUFA() {
       <Navbar team="lawufa"/>
     </div>
     <div>
-      <TeamLanding />
+      <TeamLanding team="lawufa"/>
     </div>
     <div className="flex flex-row justify-between p-4 w-full text-gray-500 z-10">
     <Link 

@@ -11,7 +11,10 @@ export default function WUFO() {
         <Navbar team="wufo"/>
       </div>
       <div>
-        <TeamLanding />
+        <TeamLanding team="wufo"/>
+      </div>
+      <div id="roster">
+        <Roster team="wufo"/>
       </div>
       <div className="flex flex-row justify-between p-4 w-full text-gray-500 z-10">
         <Link 
@@ -20,10 +23,6 @@ export default function WUFO() {
         >
           Go back to top
         </Link>
-      </div>
-      <div id="roster">
-        <br/>
-        <Roster team="wufo"/>
       </div>
     </div>
   )
