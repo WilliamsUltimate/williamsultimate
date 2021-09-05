@@ -1,5 +1,6 @@
 export const wufoPlayers = [
   {
+    "isCaptain": true,
     "name": "Ben Siciliano",
     "nickname": "Italian Stallion",
     "year": "Senior",
@@ -8,14 +9,7 @@ export const wufoPlayers = [
     "hometown": "Queens, NY"
   },
   {
-    "name": "Lucas Tolley",
-    "nickname": "Trolley",
-    "year": "Senior",
-    "number": 2,
-    "position": "Cutter",
-    "hometown": "Millersville, MD"
-  },
-  {
+    "isCaptain": true,
     "name": "Nick Servedio",
     "nickname": "Sir Biblio, Kerosene",
     "year": "Senior",
@@ -24,30 +18,7 @@ export const wufoPlayers = [
     "hometown": "New York, NY"
   },
   {
-    "name": "Alan Sun",
-    "nickname": "Lasuna",
-    "year": "Junior",
-    "number": 77,
-    "position": "Cutter",
-    "hometown": "Hamilton, NJ"
-  },
-  {
-    "name": "Elijah Tamarchenko",
-    "nickname": "Mo",
-    "year": "Junior",
-    "number": 66,
-    "position": "Cutter",
-    "hometown": "New Paltz, NY"
-  },
-  {
-    "name": "Gordon Elwood",
-    "nickname": "G",
-    "year": "Junior",
-    "number": 15,
-    "position": "Handler",
-    "hometown": "Olympia, WA"
-  },
-  {
+    "isCaptain": true,
     "name": "Harry Wilcox",
     "nickname": "Chapron",
     "year": "Junior",
@@ -56,6 +27,43 @@ export const wufoPlayers = [
     "hometown": "Los Angeles, CA"
   },
   {
+    "isCaptain": false,
+    "name": "Lucas Tolley",
+    "nickname": "Trolley",
+    "year": "Senior",
+    "number": 2,
+    "position": "Cutter",
+    "hometown": "Millersville, MD"
+  },
+  {
+    "isCaptain": false,
+    "name": "Alan Sun",
+    "nickname": "Lasuna",
+    "year": "Junior",
+    "number": 77,
+    "position": "Cutter",
+    "hometown": "Hamilton, NJ"
+  },
+  {
+    "isCaptain": false,
+    "name": "Elijah Tamarchenko",
+    "nickname": "Mo",
+    "year": "Junior",
+    "number": 66,
+    "position": "Cutter",
+    "hometown": "New Paltz, NY"
+  },
+  {
+    "isCaptain": false,
+    "name": "Gordon Elwood",
+    "nickname": "G",
+    "year": "Junior",
+    "number": 15,
+    "position": "Handler",
+    "hometown": "Olympia, WA"
+  },
+  {
+    "isCaptain": false,
     "name": "Jacob Posner",
     "nickname": "Jape",
     "year": "Junior",
@@ -64,6 +72,7 @@ export const wufoPlayers = [
     "hometown": "Chicago, IL"
   },
   {
+    "isCaptain": false,
     "name": "Jonah Tobin",
     "nickname": "Mike Jones",
     "year": "Junior",
@@ -72,6 +81,7 @@ export const wufoPlayers = [
     "hometown": "Wellesley, MA"
   },
   {
+    "isCaptain": false,
     "name": "Malcolm Bellairs",
     "nickname": "Falcon",
     "year": "Junior",
@@ -80,6 +90,7 @@ export const wufoPlayers = [
     "hometown": "Shoreview, MN"
   },
   {
+    "isCaptain": false,
     "name": "Nick Bern",
     "nickname": "Bernice",
     "year": "Junior",
@@ -88,6 +99,7 @@ export const wufoPlayers = [
     "hometown": "Newton, MA"
   },
   {
+    "isCaptain": false,
     "name": "Oscar Triggs",
     "nickname": "Scar, Tractor",
     "year": "Junior",
@@ -96,6 +108,7 @@ export const wufoPlayers = [
     "hometown": "Amherst, MA"
   },
   {
+    "isCaptain": false,
     "name": "Rito Tanaka",
     "nickname": "Burrito",
     "year": "Junior",
@@ -104,6 +117,7 @@ export const wufoPlayers = [
     "hometown": "Tokyo, Japan"
   },
   {
+    "isCaptain": false,
     "name": "Alex Kim",
     "nickname": "The Rock",
     "year": "Sophomore",
@@ -112,6 +126,7 @@ export const wufoPlayers = [
     "hometown": "Fullerton, CA"
   },
   {
+    "isCaptain": false,
     "name": "Chris Brown",
     "nickname": "Breezy",
     "year": "Sophomore",
@@ -120,6 +135,7 @@ export const wufoPlayers = [
     "hometown": "Rye, NY"
   },
   {
+    "isCaptain": false,
     "name": "Danny Klein",
     "nickname": "DONK",
     "year": "Sophomore",
@@ -128,6 +144,7 @@ export const wufoPlayers = [
     "hometown": "Cambridge, MA"
   },
   {
+    "isCaptain": false,
     "name": "Joe Miotto",
     "nickname": "JoBag",
     "year": "Sophomore",
@@ -136,6 +153,7 @@ export const wufoPlayers = [
     "hometown": "Northborough, MA"
   },
   {
+    "isCaptain": false,
     "name": "Karthik Subbiah",
     "nickname": "Karthicc",
     "year": "Sophomore",
@@ -144,6 +162,7 @@ export const wufoPlayers = [
     "hometown": "Tamil Nadu, India"
   },
   {
+    "isCaptain": false,
     "name": "Luke Graupmann",
     "nickname": "Kyle",
     "year": "Sophomore",
@@ -152,6 +171,7 @@ export const wufoPlayers = [
     "hometown": "Talkeetna, AK"
   },
   {
+    "isCaptain": false,
     "name": "Minh-Huy Le",
     "nickname": "Minh",
     "year": "Sophomore",
@@ -160,6 +180,7 @@ export const wufoPlayers = [
     "hometown": "Bolton, MA"
   },
   {
+    "isCaptain": false,
     "name": "Reece Overholt",
     "nickname": "6 foot 6",
     "year": "Sophomore",
@@ -168,6 +189,7 @@ export const wufoPlayers = [
     "hometown": "Tyrone, GA"
   },
   {
+    "isCaptain": false,
     "name": "Reed Kendall",
     "nickname": "Bambi",
     "year": "Sophomore",
@@ -176,6 +198,7 @@ export const wufoPlayers = [
     "hometown": "Falmouth, MA"
   },
   {
+    "isCaptain": false,
     "name": "Will Beyreis",
     "nickname": "Billy Frisbee",
     "year": "Sophomore",

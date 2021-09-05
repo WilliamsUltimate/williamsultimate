@@ -15,7 +15,8 @@ export default function Roster(props) {
         <h1 className="text-4xl text-white font-semibold">2021-2022 Roster</h1>
         <div class="container flex justify-center flex-wrap gap-x-8 gap-y-8 mt-8 mb-16">
           {props.team === 'wufo' ? 
-            wufoPlayers.map(player => <Player 
+            wufoPlayers.map(player => <Player
+                                        isCaptain={player.isCaptain}
                                         team="wufo"
                                         name='' 
                                         first={player.name.split(' ')[0]}
@@ -27,6 +28,7 @@ export default function Roster(props) {
                                         hometown={player.hometown}
                                       />) 
             : lawufaplayers.map((player) => <Player 
+                                              isCaptain={false}
                                               team="lafwufa"
                                               name={player} 
                                               first="asdf"

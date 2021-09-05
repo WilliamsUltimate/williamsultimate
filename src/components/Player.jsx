@@ -73,7 +73,7 @@ export default function Player(props) {
             className="absolute top-4 left-2 text-white py-1 px-3 text-2xl font-semibold"
             style={{ textShadow: '3px 2px #4C1D95' }}
           >
-            {props.first} {props.last}
+            {props.first} {props.last} {props.isCaptain ? <span className="italic text-base font-medium">Captain</span> : ''}
           </div>
           <div className="flex flex-row">
             <div 
