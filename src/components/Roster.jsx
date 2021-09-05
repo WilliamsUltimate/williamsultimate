@@ -1,5 +1,6 @@
 import React from 'react';
 import Player from '../components/Player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Roster(props) {
 
@@ -25,6 +26,15 @@ export default function Roster(props) {
           {props.team === 'wufo' ? wufoplayers.map((player) => <Player team="wufo" name={player}/>) : 
                                   lawufaplayers.map((player) => <Player team="lafwufa" name={player}/>)}
         </div>
+      </div>
+      <div className="p-4 w-full z-10">
+        <Link 
+          smooth to='/wufo#top'
+          className="text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+          style={{ textShadow: '2px 2px #4C1D95' }}
+        >
+          Go back ↑
+        </Link>
       </div>
     </div>
   )
