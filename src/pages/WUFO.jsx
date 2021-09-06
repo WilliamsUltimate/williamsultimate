@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import TeamLanding from '../components/TeamLanding';
 import { HashLink as Link } from 'react-router-hash-link';
 import Roster from '../components/Roster';
+import About from '../components/About';
 
 export default function WUFO() {
   return (
@@ -12,6 +13,9 @@ export default function WUFO() {
       </div>
       <div>
         <TeamLanding team="wufo"/>
+      </div>
+      <div id="about">
+        <About team="wufo"/>
       </div>
       <div id="roster">
         <Roster team="wufo"/>
