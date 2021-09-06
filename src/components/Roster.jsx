@@ -23,6 +23,7 @@ export default function Roster(props) {
                                         last={player.name.split(' ')[1]}
                                         number={player.number}
                                         nickname={player.nickname}
+                                        pronouns={player.pronouns}
                                         year={player.year}
                                         position={player.position}
                                         hometown={player.hometown}
@@ -35,6 +36,7 @@ export default function Roster(props) {
                                               last="asdf"
                                               number={1}
                                               nickname="asdf"
+                                              pronouns="asdf"
                                               year="asdf"
                                               position="asdf"
                                               hometown="asdf"

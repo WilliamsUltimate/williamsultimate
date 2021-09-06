@@ -19,7 +19,7 @@ export default function Player(props) {
         <div className="cursor-pointer relative">
             {props.team === "wufo" ? 
               <img 
-                src={require(`../assets/wufopics/roster/${props.last.toLowerCase()}.jpg`).default}
+                src={require(`../assets/wufopics/roster/${props.first}-${props.last}.jpg`).default}
                 alt={`${props.first} ${props.last}`}
                 className="rounded"
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
@@ -43,7 +43,7 @@ export default function Player(props) {
         <div className="cursor-pointer relative">
           {props.team === "wufo" ? 
             <img 
-              src={require(`../assets/wufopics/roster/${props.last.toLowerCase()}.jpg`).default}
+              src={require(`../assets/wufopics/roster/${props.first}-${props.last}.jpg`).default}
               alt={`${props.first} ${props.last}`}
               className="rounded"
               style={{ 
@@ -80,6 +80,7 @@ export default function Player(props) {
               className="flex flex-col absolute top-16 left-6 text-white py-1 px-3 text-md font-medium border-l-4 border-purple-400"
             >
               <div className="italic py-2">Nickname:</div> 
+              <div className="italic py-2">Pronouns:</div>
               <div className="italic py-2">Year:</div>
               <div className="italic py-2">Position:</div>
               <div className="italic py-2">Hometown:</div>
@@ -88,6 +89,7 @@ export default function Player(props) {
               className="flex flex-col absolute top-16 left-32 text-white py-1 px-3 text-md font-medium"
             >
               <div className="py-2">{props.nickname}</div> 
+              <div className="py-2">{props.pronouns}</div>
               <div className="py-2">{props.year}</div>
               <div className="py-2">{props.position}</div>
               <div className="py-2">{props.hometown}</div>
