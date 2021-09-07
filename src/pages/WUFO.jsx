@@ -25,14 +25,15 @@ export default function WUFO() {
       </div>
 
       {/* News (Upcoming Events and Twitter) */}
-      <section id="news" class="flex flex-row p-8 bg-fixed bg-wufo bg-cover">
-          <div className="flex-grow pr-8">
+      <div id="news" class="flex flex-row place-self-center p-8">
+          <div>
             <Events team="wufo"/>
           </div>
+          <div style={{ width: "150px"}} />
           <div>
             <Twitter handle="wufoultimate"/>
           </div>
-      </section>
+      </div>
 
       {/* Roster */}
       <div id="roster">
