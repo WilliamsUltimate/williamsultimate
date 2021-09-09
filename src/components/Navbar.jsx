@@ -49,13 +49,15 @@ export default function Navbar(props) {
       >
         News
       </Link>
-      <Link 
-        smooth to={`/${props.team}#roster`}
-        className="py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
-        style={{ textShadow: '2px 2px #4C1D95' }}
-      >
-        Roster
-      </Link>
+      {props.team !== 'buf' &&
+        <Link 
+          smooth to={`/${props.team}#roster`}
+          className="py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+          style={{ textShadow: '2px 2px #4C1D95' }}
+        >
+          Roster
+        </Link>
+      }
       <div className="flex flex-col">
         <div
           onClick={() => setOpenDropdown(!openDropdown)}
