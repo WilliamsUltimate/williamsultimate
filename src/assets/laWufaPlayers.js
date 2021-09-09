@@ -55,7 +55,7 @@ export const laWufaPlayers = [
     "nickname": "QB",
     "pronouns": "she/her",
     "year": "Junior",
-    "number": "",
+    "number": 22,
     "position": "Handler",
     "hometown": "New York, NY"
   },
