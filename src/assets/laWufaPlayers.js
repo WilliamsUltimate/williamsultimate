@@ -2,7 +2,7 @@ export const laWufaPlayers = [
   {
     "isCaptain": true,
     "name": "Siri Bohacek",
-    "nickname": "",
+    "nickname": "Siri",
     "pronouns": "she/her",
     "year": "Senior",
     "number": 73,

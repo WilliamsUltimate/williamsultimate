@@ -88,7 +88,7 @@ export default function Player(props) {
             <div 
               className="flex flex-col absolute top-16 left-32 text-white py-1 px-3 text-md font-medium"
             >
-              <div className="py-2">{props.first === "Siri" ? "Siri" : props.nickname}</div> 
+              <div className="py-2">{props.nickname}</div> 
               <div className="py-2">{props.pronouns}</div>
               <div className="py-2">{props.year}</div>
               <div className="py-2">{props.position}</div>
