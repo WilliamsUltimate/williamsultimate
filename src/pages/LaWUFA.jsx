@@ -5,6 +5,7 @@ import About from '../components/About';
 import Events from '../components/Events';
 import Twitter from '../components/Twitter';
 import Roster from '../components/Roster';
+import About from '../components/About';
 
 export default function LaWUFA() {
   return (
@@ -21,7 +22,7 @@ export default function LaWUFA() {
 
       {/* About */}
       <div id="about">
-        <About team="lawufa"/>
+        <About/>
       </div>
 
       {/* News (Upcoming Events and Twitter) */}
