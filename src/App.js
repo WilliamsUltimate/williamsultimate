@@ -6,8 +6,12 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import ReactGA from 'react-ga';
 
 function App() {
+  const TRACKING_ID = "UA-160932642-1";
+  ReactGA.initialize(TRACKING_ID);
+  
   return (
     <Switch>
       <Route path="/" exact component={() => <Home />} />
