@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+div .home {
+  height: 100%;
+  overflow: hidden;
+}
+
 div .wufo-outer-disc {
   width: 210px;
   height: 210px;
@@ -81,5 +86,27 @@ div .inner-disc {
 @keyframes rotation {
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .wufo-x, .wufo-y, .lawufa-x, .lawufa-y, .buf-x, .buf-y {
+    animation: none !important;
+  }
+  .wufo-outer-disc {
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .lawufa-outer-disc {
+    left: 0;
+    margin: auto;
+  }
+
+  .buf-outer-disc {
+    right: 0;
+    margin: auto;
   }
 }
