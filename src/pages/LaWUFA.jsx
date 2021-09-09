@@ -16,17 +16,8 @@ export default function LaWUFA() {
     </div>
     <div id="about">
         <About team="lawufa"/>
-      </div>
-    <div className="flex flex-row justify-between p-4 w-full text-gray-500 z-10">
-    <Link 
-      smooth to='/lawufa#top'
-      className="bg-white p-2 shadow-drop text-gray-shadow"
-    >
-      Go back to top
-    </Link>
     </div>
     <div id="roster">
-      <br/>
       <Roster team="lawufa"/>
     </div>
   </div>
