@@ -2,14 +2,9 @@ import React from 'react';
 import Player from '../components/Player';
 import { HashLink as Link } from 'react-router-hash-link';
 import { wufoPlayers } from '../assets/wufo-players';
+import { laWufaPlayers } from '../assets/laWufaPlayers';
 
 export default function Roster(props) {
-  // TODO: Add missing sophomores
-  const lawufaplayers = ["Alice-Henry", "Annika", "Clare",
-                         "Coco", "Lauren", "Mila",
-                         "Nina", "Ruby", "Siri",
-                         "Tula", "Victoria"]
-
   return (
     <div className="overflow-hidden bg-gradient-to-bl from-purple-400 via-purple-600 to-purple-800">
       <div className="mt-16 grid justify-items-center">
@@ -19,7 +14,6 @@ export default function Roster(props) {
             wufoPlayers.map(player => <Player
                                         isCaptain={player.isCaptain}
                                         team="wufo"
-                                        name='' 
                                         first={player.name.split(' ')[0]}
                                         last={player.name.split(' ')[1]}
                                         number={player.number}
@@ -29,24 +23,23 @@ export default function Roster(props) {
                                         position={player.position}
                                         hometown={player.hometown}
                                       />) 
-            : lawufaplayers.map((player) => <Player 
-                                              isCaptain={false}
+            : laWufaPlayers.map((player) => <Player 
+                                              isCaptain={player.isCaptain}
                                               team="lafwufa"
-                                              name={player} 
-                                              first="asdf"
-                                              last="asdf"
-                                              number={1}
-                                              nickname="asdf"
-                                              pronouns="asdf"
-                                              year="asdf"
-                                              position="asdf"
-                                              hometown="asdf"
+                                              first={player.name.split(' ')[0]}
+                                              last={player.name.split(' ')[1]}
+                                              number={player.number}
+                                              nickname={player.nickname}
+                                              pronouns={player.pronouns}
+                                              year={player.year}
+                                              position={player.position}
+                                              hometown={player.hometown}
                                             />)}
         </div>
       </div>
       <div className="p-4 w-full z-10">
         <Link 
-          smooth to='/wufo#top'
+          smooth to={`/${props.team}#top`}
           className="text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
           style={{ textShadow: '2px 2px #4C1D95' }}
         >

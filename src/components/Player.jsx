@@ -25,7 +25,7 @@ export default function Player(props) {
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
               /> :
               <img 
-                src={require(`../assets/lawufapics/roster/${props.name}.jpg`).default}
+                src={require(`../assets/lawufapics/roster/${props.first}-${props.last}.jpg`).default}
                 alt={`${props.first} ${props.last}`}
                 className="rounded"
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
@@ -35,7 +35,7 @@ export default function Player(props) {
               className="bg-black bg-opacity-50 rounded absolute right-2 bottom-2 text-white py-1 px-3 text-2xl font-semibold"
               style={{ textShadow: '3px 2px #4C1D95' }}
             >
-              #{props.number} {props.first}
+              #{props.number === "" ? "??" : props.number} {props.first}
             </div>
         </div>
 
@@ -56,7 +56,7 @@ export default function Player(props) {
               }}
             /> :
             <img 
-              src={require(`../assets/lawufapics/roster/${props.name}.jpg`).default}
+              src={require(`../assets/lawufapics/roster/${props.first}-${props.last}.jpg`).default}
               alt={`${props.first} ${props.last}`}
               className="rounded"
               style={{ 
