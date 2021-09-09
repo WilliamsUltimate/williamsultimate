@@ -17,19 +17,19 @@ export default function Navbar(props) {
 
   return (
     <div className="flex flex-row justify-start p-4 fixed w-full text-gray-500 z-40">
-      <div onMouseOver={handleHover} onMouseOut={handleHover}>
+      <div onMouseOver={handleHover} onMouseOut={handleHover} className="pr-4">
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
           {/* Front of card */}
           <Link
             to='/'
-            className="bg-transparent pr-4"
+            className="bg-transparent"
           >
             <img src={props.team === 'wufo' ? wufo : (props.team === 'lawufa' ? lawufa : buf)} alt="Logo" className="h-12"/>
           </Link>
           {/* Back of card */}
           <Link
             to='/'
-            className="bg-transparent pr-4"
+            className="bg-transparent"
           >
             <img src="/wuf.png" alt="Logo" className="h-12"/>
           </Link>
@@ -44,7 +44,7 @@ export default function Navbar(props) {
       </Link>
       <Link 
         smooth to={`/${props.team}#news`}
-        className="py-2 px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+        className="py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
         style={{ textShadow: '2px 2px #4C1D95' }}
       >
         News
