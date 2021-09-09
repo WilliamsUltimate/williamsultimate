@@ -10,7 +10,8 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'wufo': "url('assets/wufopics/kaizen-nick.jpg')",
-        'lawufa': "url('assets/lawufapics/lauren-disc.JPG')"
+        'lawufa': "url('assets/lawufapics/lauren-disc.JPG')",
+        'buf': "url('assets/bufpics/bufteam.png')"
       })
     },
     boxShadow: {
