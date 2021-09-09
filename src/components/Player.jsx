@@ -10,7 +10,7 @@ export default function Player(props) {
   }
 
   return (
-    <div onMouseOver={handleHover} onMouseOut={handleHover}>
+    <div onMouseOver={handleHover} onMouseOut={handleHover} onClick={handleHover}>
       <ReactCardFlip
         isFlipped={isFlipped}
         flipDirection="horizontal"
