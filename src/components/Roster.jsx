@@ -39,7 +39,7 @@ export default function Roster(props) {
       </div>
       <div className="p-4 w-full z-10">
         <Link 
-          smooth to='/wufo#top'
+          smooth to={`/${props.team}#top`}
           className="text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
           style={{ textShadow: '2px 2px #4C1D95' }}
         >
