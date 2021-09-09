@@ -1,32 +1,39 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import TeamLanding from '../components/TeamLanding';
-import { HashLink as Link } from 'react-router-hash-link';
+import About from '../components/About';
+import Events from '../components/Events';
+import Twitter from '../components/Twitter';
 import Roster from '../components/Roster';
 import About from '../components/About';
 
 export default function WUFO() {
   return (
     <div className="flex flex-col">
-      <div className="top-0" id="top">
+      {/* Navbar */}
+      <div id="top" className="top-0" >
         <Navbar team="wufo"/>
       </div>
+
+      {/* Landing Image */}
       <div>
         <TeamLanding team="wufo"/>
       </div>
+
+      {/* About */}
       <div id="about">
-        <About team="wufo"/>
+        <About/>
       </div>
+
+      {/* News (Upcoming Events and Twitter) */}
+      <div id="news" className="flex flex-col md:flex-row p-4 gap-8 place-items-center place-content-center min-h-screen bg-fixed bg-wufo bg-cover">
+        <Events team="wufo"/>
+        <Twitter handle="wufoultimate"/>
+      </div>
+
+      {/* Roster */}
       <div id="roster">
         <Roster team="wufo"/>
-      </div>
-      <div className="flex flex-row justify-between p-4 w-full text-gray-500 z-10">
-        <Link 
-          smooth to='/wufo#top'
-          className="bg-white p-2 shadow-drop text-gray-shadow"
-        >
-          Go back to top
-        </Link>
       </div>
     </div>
   )
