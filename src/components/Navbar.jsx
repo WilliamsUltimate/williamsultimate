@@ -24,6 +24,13 @@ export default function Navbar(props) {
         About
       </Link>
       <Link 
+        smooth to={`/${props.team}#news`}
+        className="py-2 px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+        style={{ textShadow: '2px 2px #4C1D95' }}
+      >
+        News
+      </Link>
+      <Link 
         smooth to={`/${props.team}#roster`}
         className="py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
         style={{ textShadow: '2px 2px #4C1D95' }}
