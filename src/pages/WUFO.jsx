@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import TeamLanding from '../components/TeamLanding';
-import Roster from '../components/Roster';
-import Twitter from '../components/Twitter';
-import Events from '../components/Events';
 import About from '../components/About';
+import Events from '../components/Events';
+import Twitter from '../components/Twitter';
+import Roster from '../components/Roster';
 
 export default function WUFO() {
   return (
@@ -25,14 +25,9 @@ export default function WUFO() {
       </div>
 
       {/* News (Upcoming Events and Twitter) */}
-      <div id="news" class="flex flex-row place-self-center p-8">
-          <div>
-            <Events team="wufo"/>
-          </div>
-          <div style={{ width: "150px"}} />
-          <div>
-            <Twitter handle="wufoultimate"/>
-          </div>
+      <div id="news" className="flex flex-col md:flex-row p-4 gap-8 place-items-center place-content-center min-h-screen bg-fixed bg-wufo bg-cover">
+        <Events team="wufo"/>
+        <Twitter handle="wufoultimate"/>
       </div>
 
       {/* Roster */}

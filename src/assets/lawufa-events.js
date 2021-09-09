@@ -1,4 +1,4 @@
-export const wufoEvents = [
+export const lawufaEvents = [
   {
     date: "9/9/2021",
     name: "Purple Key Fair 💜🔑🎡",

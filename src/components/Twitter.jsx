@@ -4,10 +4,10 @@ import { Timeline } from 'react-twitter-widgets';
 export default function Twitter(props) {
 
   return (
-    <div className="relative">
+    <div>
       <Timeline
         dataSource={{ sourceType: "profile", screenName: props.handle }}
-        options={{ width: "400", height: "600" }}
+        options={{ width: "500", height: "600" }}
       />
     </div>
   )
