@@ -14,7 +14,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div class="home">
       {/* Background image */}
       <div class="background"/>
 

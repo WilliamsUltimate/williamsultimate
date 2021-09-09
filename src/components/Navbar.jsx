@@ -5,7 +5,6 @@ import TeamDropdown from './TeamDropdown';
 import wufo from '../assets/wufopics/wufo.png';
 import lawufa from '../assets/lawufapics/lawufa.png';
 import buf from '../assets/bufpics/buf.png'
-// import wuf from '../../public/wuf.png'
 
 export default function Navbar(props) {
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -38,14 +37,21 @@ export default function Navbar(props) {
       </div>
       <Link 
         smooth to={`/${props.team}#about`}
-        className="py-2 px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+        className="py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
         style={{ textShadow: '2px 2px #4C1D95' }}
       >
         About
       </Link>
       <Link 
-        smooth to={`/${props.team}#roster`}
+        smooth to={`/${props.team}#news`}
         className="py-2 px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+        style={{ textShadow: '2px 2px #4C1D95' }}
+      >
+        News
+      </Link>
+      <Link 
+        smooth to={`/${props.team}#roster`}
+        className="py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
         style={{ textShadow: '2px 2px #4C1D95' }}
       >
         Roster
@@ -53,7 +59,7 @@ export default function Navbar(props) {
       <div className="flex flex-col">
         <div
           onClick={() => setOpenDropdown(!openDropdown)}
-          className="flex flex-row place-items-center cursor-pointer py-2 px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
+          className="flex flex-row place-items-center cursor-pointer py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
           style={{ textShadow: '2px 2px #4C1D95' }}
         >
           {props.team === 'lawufa' ? 'La WUFA' : props.team.toUpperCase()}
