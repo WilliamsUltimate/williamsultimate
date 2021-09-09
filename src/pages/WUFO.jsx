@@ -5,6 +5,7 @@ import About from '../components/About';
 import Events from '../components/Events';
 import Twitter from '../components/Twitter';
 import Roster from '../components/Roster';
+import About from '../components/About';
 
 export default function WUFO() {
   return (
