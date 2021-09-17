@@ -132,7 +132,7 @@ export const wufoPlayers = [
   {
     "isCaptain": false,
     "name": "Alex Kim",
-    "nickname": "The Rock",
+    "nickname": "Baby Keem",
     "pronouns": "he/him",
     "year": "Sophomore",
     "number": 69,
