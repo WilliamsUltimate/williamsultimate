@@ -115,7 +115,7 @@ export const laWufaPlayers = [
     "nickname": "Wheels",
     "pronouns": "she/her",
     "year": "Sophomore",
-    "number": "",
+    "number": "11",
     "position": "Cutter",
     "hometown": "Ambler, PA"
   },
