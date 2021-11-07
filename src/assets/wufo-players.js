@@ -132,7 +132,7 @@ export const wufoPlayers = [
   {
     "isCaptain": false,
     "name": "Alex Kim",
-    "nickname": "Baby Keem",
+    "nickname": "Big Frog",
     "pronouns": "he/him",
     "year": "Sophomore",
     "number": 69,
@@ -202,7 +202,7 @@ export const wufoPlayers = [
   {
     "isCaptain": false,
     "name": "Reece Overholt",
-    "nickname": "6 foot 6",
+    "nickname": "Spoon",
     "pronouns": "he/him",
     "year": "Sophomore",
     "number": 17,
