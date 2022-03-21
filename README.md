@@ -23,4 +23,4 @@ If there is a bug or new feature you would like to see, please feel free to open
 
 ## Authors
 - [Alan Sun](https://github.com/alansun25)
-- [Rito Tanaka](https://github.com/ritot)
+- [Rito Tanaka](https://github.com/ritotn)
