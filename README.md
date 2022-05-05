@@ -1,6 +1,6 @@
 # Williams Ultimate Frisbee
 
-This is the official website for Williams Ultimate Frisbee (WUF), the umbrella organization for WUFO, La WUFA, and BUF.\
+This is the official website for Williams Ultimate Frisbee (WUF), the umbrella organization for WUFO, NOVA, and BUF.\
 Visit us at [williamsultimate.com](https://williamsultimate.com)!
 
 ## Installation
