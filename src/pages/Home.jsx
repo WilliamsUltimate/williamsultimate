@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [isShown, setIsShown] = useState(false);
-  const teams = ['wufo', 'lawufa', 'buf'];
+  const teams = ['wufo', 'nova', 'buf'];
 
   const catchRandomDisc = () => {
     const rand = Math.floor(Math.random() * 3);
@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Team discs */}
       <TeamDisc team="wufo" />
-      <TeamDisc team="lawufa" />
+      <TeamDisc team="nova" />
       <TeamDisc team="buf" />
 
       {/* Williams Ultimate text logo */}
