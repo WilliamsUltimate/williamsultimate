@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 export default function TeamDropdown(props) {
   const otherTeams = 
     props.team === 'wufo' 
-      ? ['lawufa', 'buf'] 
-      : (props.team === 'lawufa' 
+      ? ['nova', 'buf'] 
+      : (props.team === 'nova' 
           ? ['wufo', 'buf'] 
-          : ['wufo', 'lawufa']);
+          : ['wufo', 'nova']);
 
   const displayName = teamName => {
-    return teamName === 'lawufa' ? 'La WUFA' : teamName.toUpperCase();
+    return teamName === 'nova' ? 'NOVA' : teamName.toUpperCase();
   }
   
   return (

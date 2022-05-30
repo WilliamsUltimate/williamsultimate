@@ -1,4 +1,4 @@
-export const lawufaEvents = [
+export const novaEvents = [
   {
     date: "9/9/2021",
     name: "Purple Key Fair 💜🔑🎡",

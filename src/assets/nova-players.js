@@ -1,4 +1,4 @@
-export const laWufaPlayers = [
+export const novaPlayers = [
   {
     "isCaptain": true,
     "name": "Siri Bohacek",

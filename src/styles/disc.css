@@ -15,7 +15,7 @@ div .wufo-outer-disc {
   left: 0;
 }
 
-div .lawufa-outer-disc {
+div .nova-outer-disc {
   width: 210px;
   height: 210px;
   position: absolute;
@@ -39,11 +39,11 @@ div .buf-outer-disc {
   animation: up-to-down-y 32s linear infinite alternate;
 }
 
-.lawufa-x {
+.nova-x {
   animation: right-to-left-x 28s linear infinite alternate;
 }
 
-.lawufa-y {
+.nova-y {
   animation: up-to-down-y 33s linear infinite alternate;
 }
 
@@ -91,7 +91,7 @@ div .inner-disc {
 
 /* Mobile */
 @media (max-width: 500px) {
-  .wufo-x, .wufo-y, .lawufa-x, .lawufa-y, .buf-x, .buf-y {
+  .wufo-x, .wufo-y, .nova-x, .nova-y, .buf-x, .buf-y {
     animation: none !important;
   }
   .wufo-outer-disc {
@@ -100,7 +100,7 @@ div .inner-disc {
     margin: auto;
   }
 
-  .lawufa-outer-disc {
+  .nova-outer-disc {
     left: 0;
     margin: auto;
   }

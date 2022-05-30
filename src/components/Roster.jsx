@@ -2,7 +2,7 @@ import React from 'react';
 import Player from '../components/Player';
 import { HashLink as Link } from 'react-router-hash-link';
 import { wufoPlayers } from '../assets/wufo-players';
-import { laWufaPlayers } from '../assets/laWufaPlayers';
+import { novaPlayers } from '../assets/nova-players';
 
 export default function Roster(props) {
   return (
@@ -23,9 +23,9 @@ export default function Roster(props) {
                                         position={player.position}
                                         hometown={player.hometown}
                                       />) 
-            : laWufaPlayers.map((player) => <Player 
+            : novaPlayers.map((player) => <Player 
                                               isCaptain={player.isCaptain}
-                                              team="lafwufa"
+                                              team="nova"
                                               first={player.name.split(' ')[0]}
                                               last={player.name.split(' ')[1]}
                                               number={player.number}

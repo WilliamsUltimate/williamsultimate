@@ -10,7 +10,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'wufo': "url('assets/wufopics/kaizen-nick.jpg')",
-        'lawufa': "url('assets/lawufapics/lauren-disc.JPG')",
+        'nova': "url('assets/novapics/lauren-disc.JPG')",
         'buf': "url('assets/bufpics/bufteam.png')"
       })
     },

@@ -1,6 +1,6 @@
 import Home from './pages/Home';
 import WUFO from './pages/WUFO';
-import LaWUFA from './pages/LaWUFA';
+import NOVA from './pages/NOVA';
 import BUF from './pages/BUF';
 import {
   Switch,
@@ -16,7 +16,7 @@ function App() {
     <Switch>
       <Route path="/" exact component={() => <Home />} />
       <Route path="/wufo" exact component={() => <WUFO />} />
-      <Route path="/lawufa" exact component={() => <LaWUFA />} />
+      <Route path="/nova" exact component={() => <NOVA />} />
       <Route path="/buf" exact component={() => <BUF />} />
     </Switch>
   );

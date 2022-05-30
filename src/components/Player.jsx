@@ -25,7 +25,7 @@ export default function Player(props) {
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
               /> :
               <img 
-                src={require(`../assets/lawufapics/roster/${props.first}-${props.last}.jpg`).default}
+                src={require(`../assets/novapics/roster/${props.first}-${props.last}.jpg`).default}
                 alt={`${props.first} ${props.last}`}
                 className="rounded"
                 style={{ objectFit: "cover", width: "300px", height: "300px" }}
@@ -56,7 +56,7 @@ export default function Player(props) {
               }}
             /> :
             <img 
-              src={require(`../assets/lawufapics/roster/${props.first}-${props.last}.jpg`).default}
+              src={require(`../assets/novapics/roster/${props.first}-${props.last}.jpg`).default}
               alt={`${props.first} ${props.last}`}
               className="rounded"
               style={{ 

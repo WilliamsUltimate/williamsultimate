@@ -1,6 +1,6 @@
 import React from 'react';
 import wufologo from '../assets/wufopics/wufo.png';
-import lawufalogo from '../assets/lawufapics/lawufa.png';
+import novalogo from '../assets/novapics/nova.png';
 import buflogo from '../assets/bufpics/buf.png';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ export default function TeamDisc(props) {
               <div className="fixed w-3/5 h-3/5 border border-gray-300 rounded-full"></div>
               <img
                 className="fixed w-1/2 h-1/2"
-                src={props.team === 'wufo' ? wufologo : (props.team === 'lawufa' ? lawufalogo : buflogo)}
+                src={props.team === 'wufo' ? wufologo : (props.team === 'nova' ? novalogo : buflogo)}
                 alt={`Click to view ${props.team.toUpperCase()}'s homepage.`}
               />
             </Link>

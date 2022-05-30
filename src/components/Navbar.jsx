@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import ReactCardFlip from 'react-card-flip';
 import TeamDropdown from './TeamDropdown';
 import wufo from '../assets/wufopics/wufo.png';
-import lawufa from '../assets/lawufapics/lawufa.png';
+import nova from '../assets/novapics/nova.png';
 import buf from '../assets/bufpics/buf.png'
 
 export default function Navbar(props) {
@@ -24,7 +24,7 @@ export default function Navbar(props) {
             to='/'
             className="bg-transparent"
           >
-            <img src={props.team === 'wufo' ? wufo : (props.team === 'lawufa' ? lawufa : buf)} alt="Logo" className="h-12"/>
+            <img src={props.team === 'wufo' ? wufo : (props.team === 'nova' ? nova : buf)} alt="Logo" className="h-12"/>
           </Link>
           {/* Back of card */}
           <Link
@@ -64,7 +64,7 @@ export default function Navbar(props) {
           className="flex flex-row place-items-center cursor-pointer py-2 px-1 md:px-4 text-white font-medium transition hover:text-purple-100 duration-125 ease-in-out"
           style={{ textShadow: '2px 2px #4C1D95' }}
         >
-          {props.team === 'lawufa' ? 'La WUFA' : props.team.toUpperCase()}
+          {props.team === 'nova' ? 'NOVA' : props.team.toUpperCase()}
           {openDropdown 
             ? <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />

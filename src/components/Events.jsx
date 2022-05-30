@@ -1,6 +1,6 @@
 import React from 'react';
 import { wufoEvents } from '../assets/wufo-events';
-import { lawufaEvents } from '../assets/lawufa-events';
+import { novaEvents } from '../assets/nova-events';
 
 export default function Events(props) {
 
@@ -19,7 +19,7 @@ export default function Events(props) {
               {event.date}: {event.name}
             </a>
         )
-      : lawufaEvents.map(event =>
+      : novaEvents.map(event =>
         event.link === "" ? 
           <div className="px-4 py-5 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none" style={{ borderBottom: "1px solid #e3e7ed" }}>
           {event.date}: {event.name}
