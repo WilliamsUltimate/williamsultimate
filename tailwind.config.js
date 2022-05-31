@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         gray: {
           shadow: '#393939'
-        }
+        },
+        wurple: '#4C1D95'
       },
       backgroundImage: theme => ({
         'wufo': "url('assets/wufopics/kaizen-nick.jpg')",
