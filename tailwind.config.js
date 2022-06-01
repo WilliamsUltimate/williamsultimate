@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'pt': ['PT Serif', 'sans-serif'] 
+      },
       colors: {
         gray: {
           shadow: '#393939'
