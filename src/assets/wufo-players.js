@@ -131,6 +131,16 @@ export const wufoPlayers = [
   },
   {
     "isCaptain": false,
+    "name": "Nick Langel",
+    "nickname": "QG",
+    "pronouns": "he/him",
+    "year": "Junior",
+    "number": 1,
+    "position": "Cutter",
+    "hometown": "Great Neck, NY"
+  },
+  {
+    "isCaptain": false,
     "name": "Alex Kim",
     "nickname": "Big Frog",
     "pronouns": "he/him",
